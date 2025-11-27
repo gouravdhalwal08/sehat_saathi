@@ -1,0 +1,72 @@
+/* --- General Body and Font Styling --- */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f4f7f6; /* A very light, clean grey background */
+}
+
+/* --- Hide Streamlit's Default Header/Footer --- */
+#MainMenu, footer, header {
+    visibility: hidden;
+}
+
+/* --- Feature Cards for Home Page --- */
+.feature-card {
+    background-color: #ffffff;
+    color: #333333; /* <--- Fixes invisible text on cards */
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    height: 100%; /* Makes all cards in a row the same height */
+}
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.1);
+}
+
+/* --- Chat Bubble Styling --- */
+.st-emotion-cache-janbn0 { /* User message bubble */
+    background-color: #e1f5fe; /* Light blue */
+    border-radius: 10px 10px 0 10px; /* Rounded corners */
+    margin-right: 10%;
+}
+.st-emotion-cache-4oy321 { /* Assistant message bubble */
+    background-color: #ffffff;
+    border-radius: 10px 10px 10px 0;
+    border: 1px solid #e0e0e0;
+    margin-left: 10%;
+}
+
+/* --- Disease Page Expander (as Cards) --- */
+.st-expander {
+    background-color: #ffffff;
+    border-radius: 10px !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    border: none !important;
+    margin-bottom: 1rem;
+}
+.st-expander header {
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+/* --- Form and Button Styling (Reminder Page) --- */
+.stForm {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.stButton button {
+    background-color: #0068c9; /* A strong, professional blue */
+    color: white;
+    border-radius: 8px;
+    border: none;
+    padding: 10px 20px;
+    transition: background-color 0.2s;
+    font-weight: 600;
+}
+.stButton button:hover {
+    background-color: #005cb3;
+}
